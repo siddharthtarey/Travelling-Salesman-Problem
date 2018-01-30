@@ -1,0 +1,198 @@
+***********************************************Strong scaling test cases*******************************************************************
+
+# For 20 vertices:
+java pj2 debug=makespan cores=1 TSPParallev2 "RandomGraph(20,50,142862)"
+0->3->17->1->2->8->16->12->18->13->11->15->4->19->7->10->6->9->5->14->0->
+300
+Job 9510 makespan 211225 msec
+
+java pj2 debug=makespan cores=2 TSPParallev2 "RandomGraph(20,50,142862)"
+0->3->17->1->2->8->16->12->18->13->11->15->4->19->7->10->6->9->5->14->0->
+303
+Job 9511 makespan 184467 msec
+
+java pj2 debug=makespan cores=4 TSPParallev2 "RandomGraph(20,50,142862)"
+0->3->17->1->2->8->16->12->18->13->11->15->4->19->7->10->6->9->5->14->0->
+303
+Job 9512 makespan 163392 msec
+
+java pj2 debug=makespan cores=8 TSPParallev2 "RandomGraph(20,50,142862)"
+0->3->17->1->2->8->16->12->18->13->11->15->4->19->7->10->6->9->5->14->0->
+300
+Job 9513 makespan 151996 msec
+
+
+# For 40 Vertices:
+
+java pj2 debug=makespan cores=1 TSPParallev2 "RandomGraph(40,60,142862)"
+
+0
+Job 9533 makespan 20384 msec
+
+java pj2 debug=makespan cores=2 TSPParallev2 "RandomGraph(40,60,142862)"
+
+0
+Job 9532 makespan 13928 msec
+
+java pj2 debug=makespan cores=4 TSPParallev2 "RandomGraph(40,60,142862)"
+
+0
+Job 9531 makespan 12331 msec
+
+ava pj2 debug=makespan cores=8 TSPParallev2 "RandomGraph(40,60,142862)"
+
+0
+Job 9534 makespan 14869 msec
+
+
+# For 60 Vertices:
+
+java pj2 debug=makespan cores=1 TSPParallev2 "RandomGraph(60,75,142862)"
+
+0
+Job 9550 makespan 148514 msec
+
+java pj2 debug=makespan cores=2 TSPParallev2 "RandomGraph(60,75,142862)"
+
+0
+Job 9543 makespan 89919 msec
+
+java pj2 debug=makespan cores=4 TSPParallev2 "RandomGraph(60,75,142862)"
+
+0
+Job 9542 makespan 63605 msec
+
+java pj2 debug=makespan cores=8 TSPParallev2 "RandomGraph(60,75,142862)"
+
+0
+Job 9554 makespan 80575 msec
+
+# For 80 Vertices:
+
+java pj2 debug=makespan cores=1 TSPParallev2 "RandomGraph(80,95,142862)"
+
+0
+Job 9564 makespan 207777 msec
+
+java pj2 debug=makespan cores=2 TSPParallev2 "RandomGraph(80,95,142862)"
+
+0
+Job 9565 makespan 123531 msec
+
+java pj2 debug=makespan cores=4 TSPParallev2 "RandomGraph(80,95,142862)"
+
+0
+Job 9566 makespan 83590 msec
+
+java pj2 debug=makespan cores=8 TSPParallev2 "RandomGraph(80,95,142862)"
+
+0
+Job 9563 makespan 103963 msec
+
+************************************************************Weak Scaling Test Cases**********************************************************
+
+# For 20 Vertices:
+
+java pj2 debug=makespan cores=1 TSPParallev2 "RandomGraph(20,10,142862)"
+
+0
+Job 9564 makespan 95 msec
+
+java pj2 debug=makespan cores=2 TSPParallev2 "RandomGraph(20,20,142862)"
+
+0
+Job 9567 makespan 102 msec
+
+java pj2 debug=makespan cores=4 TSPParallev2 "RandomGraph(20,40,142862)"
+
+0
+Job 9569 makespan 3142 msec
+
+java pj2 debug=makespan cores=8 TSPParallev2 "RandomGraph(20,60,142862)"
+
+0
+Job 9571 makespan 774996 msec
+
+
+# For 40 Vertices:
+
+java pj2 debug=makespan cores=1 TSPParallev2 "RandomGraph(40,10,142862)"
+
+0
+Job 9575 makespan 110 msec
+
+java pj2 debug=makespan cores=2 TSPParallev2 "RandomGraph(40,20,142862)"
+
+0
+Job 9576 makespan 109 msec
+
+java pj2 debug=makespan cores=4 TSPParallev2 "RandomGraph(40,40,142862)"
+
+0
+Job 9579 makespan 209 msec
+
+java pj2 debug=makespan cores=8 TSPParallev2 "RandomGraph(40,80,142862)"
+
+0
+Job 9580 makespan 900869 msec
+
+
+# For 60 Vertices:
+
+java pj2 debug=makespan cores=1 TSPParallev2 "RandomGraph(60,9,142862)"
+
+0
+Job 9583 makespan 112 msec
+
+java pj2 debug=makespan cores=2 TSPParallev2 "RandomGraph(60,18,142862)"
+
+0
+Job 9584 makespan 110 msec
+
+java pj2 debug=makespan cores=4 TSPParallev2 "RandomGraph(60,36,142862)"
+
+0
+Job 9587 makespan 98 msec
+
+java pj2 debug=makespan cores=8 TSPParallev2 "RandomGraph(60,70,142862)"
+
+0
+Job 9588 makespan 12397 msec
+
+
+# For 80 Vertices:
+
+java pj2 debug=makespan cores=1 TSPParallev2 "RandomGraph(80,11,142862)"
+
+0
+Job 9590 makespan 98 msec
+
+java pj2 debug=makespan cores=2 TSPParallev2 "RandomGraph(80,22,142862)"
+
+0
+Job 9592 makespan 118 msec
+
+java pj2 debug=makespan cores=4 TSPParallev2 "RandomGraph(80,44,142862)"
+
+0
+Job 9593 makespan 119 msec
+
+java pj2 debug=makespan cores=8 TSPParallev2 "RandomGraph(80,88,142862)"
+
+0
+Job 9595 makespan 17724 msec
+
+*******************************************************Test Cases to test the output**********************************************************
+
+
+java pj2 debug=makespan cores=4 TSPParallev2 "RandomGraph(20,50,142862)"
+0->3->17->1->2->8->16->12->18->13->11->15->4->19->7->10->6->9->5->14->0->
+300
+Job 7851 makespan 167848 msec
+
+
+st2476@nessie:~/Courses/Parallel/TSP$ java pj2 debug=makespan cores=1 TSPParallev2 "CompleteGraph(10)"
+0->9->7->5->1->8->2->6->4->3->0->
+181
+Job 7995 makespan 16756 msec
+
